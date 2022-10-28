@@ -4,6 +4,13 @@ var connection = new Connection(myLayer.neurons[0], myLayer.neurons[1])
 // Store references to the connection in the neurons
 myLayer.neurons[0].addOutputConnection(connection)
 myLayer.neurons[1].addInputConnection(connection)
+function repeat(n,Txt){
+    for(i=0; i<n;i++){
+        document.getElementById("repeater").innerHTML = 
+          document.getElementById("repeater").innerHTML + "<br /> "
+           + Txt;
+    }
+}
 
 import uid from './uid'
 class Neuron {
